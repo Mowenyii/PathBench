@@ -1,0 +1,6 @@
+# Model-free reproduction (Tables 1-3, figures, data preparation, tests). Python 3.10.
+matplotlib==3.10.5
+numpy==1.26.4
+pillow==11.3.0
+pyarrow==24.0.0
+pytest==9.1.1

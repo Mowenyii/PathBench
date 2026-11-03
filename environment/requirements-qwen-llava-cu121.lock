@@ -1,0 +1,14 @@
+# Qwen2.5-VL-7B and LLaVA-OneVision-7B inference (frozen runs). Python 3.10; install torch from the CUDA 12.1 index first:
+#   pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu121
+accelerate==1.13.0
+datasets==4.8.5
+huggingface-hub==0.36.2
+matplotlib==3.10.5
+numpy==1.26.4
+opencv-python==4.10.0.84
+pillow==11.3.0
+pyarrow==24.0.0
+safetensors==0.8.0
+torch==2.4.0
+torchvision==0.19.0
+transformers==4.55.0

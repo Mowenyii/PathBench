@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "models": {
+    "qwen": {
+      "display": "Qwen2.5-VL",
+      "repository": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "local_dir": "models/qwen2.5-vl-7b-instruct",
+      "model_type": "qwen2_5_vl",
+      "max_new_tokens": 512,
+      "checkpoint_manifest": "configs/checkpoints/qwen2.5-vl-7b-instruct.json",
+      "environment": "environment/requirements-qwen-llava-cu121.lock"
+    },
+    "internvl": {
+      "display": "InternVL2.5",
+      "repository": "OpenGVLab/InternVL2_5-8B",
+      "revision": "e9e4c0dc1db56bfab10458671519b7fa3dd29463",
+      "local_dir": "models/internvl2_5-8b",
+      "model_type": "internvl2_5",
+      "image_size": 448,
+      "max_new_tokens": 512,
+      "checkpoint_manifest": "configs/checkpoints/internvl2_5-8b.json",
+      "environment": "environment/requirements-internvl-cu121.lock"
+    },
+    "llava": {
+      "display": "LLaVA-OneVision",
+      "repository": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+      "revision": "0d50680527681998e456c7b78950205bedd8a068",
+      "local_dir": "models/llava-onevision-qwen2-7b-ov-hf",
+      "model_type": "llava_onevision",
+      "max_new_tokens": 512,
+      "checkpoint_manifest": "configs/checkpoints/llava-onevision-qwen2-7b-ov-hf.json",
+      "environment": "environment/requirements-qwen-llava-cu121.lock"
+    },
+    "idefics2": {
+      "display": "Idefics2",
+      "repository": "HuggingFaceM4/idefics2-8b",
+      "revision": "2c42686c57fe21cf0348c9ce1077d094b72e7698",
+      "local_dir": "models/idefics2-8b",
+      "model_type": "idefics2",
+      "max_new_tokens": 512,
+      "checkpoint_manifest": "configs/checkpoints/idefics2-8b.json",
+      "environment": "environment/requirements-qwen-llava-cu121.lock"
+    }
+  },
+  "protocols": {
+    "clevr_development": {
+      "manifest": "data/clevr_development/manifest.jsonl",
+      "models": [
+        "qwen",
+        "internvl",
+        "llava",
+        "idefics2"
+      ],
+      "bootstrap_seed": {
+        "qwen": 20260828,
+        "internvl": 20260829,
+        "llava": 20260830,
+        "idefics2": 20260831
+      },
+      "note": "72-scene development set used to fix ESE, parsing, metrics, and confirmation criteria (Figure 2A)."
+    },
+    "clevr_confirmation": {
+      "manifest": "data/clevr_confirmation/manifest.jsonl",
+      "models": [
+        "qwen",
+        "internvl",
+        "llava"
+      ],
+      "bootstrap_seed": {
+        "qwen": 20260921,
+        "internvl": 20260923,
+        "llava": 20260922
+      },
+      "confirmation_gate": {
+        "min_valid_case_rate": 0.95,
+        "max_replay_state_disagreement": 0.02,
+        "min_state_table_flip": 0.2,
+        "min_executable_answer_flip": 0.1,
+        "min_silent_state_flip_rate": 0.2,
+        "min_state_minus_answer_flip": 0.2
+      }
+    },
+    "clevr_nuisance": {
+      "manifest": "data/clevr_nuisance/manifest.jsonl",
+      "models": [
+        "qwen",
+        "internvl",
+        "llava"
+      ],
+      "bootstrap_seed": {
+        "qwen": 20260827,
+        "internvl": 20260829,
+        "llava": 20260828
+      }
+    },
+    "clevr_future_queries": {
+      "bootstrap_seed": 20260824,
+      "bootstrap_samples": 10000,
+      "query_bank_size": 323
+    },
+    "ragig_confirmation": {
+      "manifest": "data/ragig_confirmation/manifest.jsonl",
+      "models": [
+        "qwen",
+        "internvl"
+      ],
+      "bootstrap_seed": {
+        "qwen": 20261011,
+        "internvl": 20261011
+      }
+    },
+    "lvis_confirmation": {
+      "manifest": "data/lvis_confirmation/manifest.jsonl",
+      "models": [
+        "qwen",
+        "internvl"
+      ],
+      "bootstrap_seed": {
+        "qwen": 20261004,
+        "internvl": 20261004
+      },
+      "reuse_bootstrap_seed": 20261005,
+      "category_vocabulary": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "airplane",
+        "bus",
+        "train",
+        "truck",
+        "boat",
+        "traffic light",
+        "fire hydrant",
+        "stop sign",
+        "parking meter",
+        "bench",
+        "bird",
+        "cat",
+        "dog",
+        "horse",
+        "sheep",
+        "cow",
+        "elephant",
+        "bear",
+        "zebra",
+        "giraffe",
+        "backpack",
+        "umbrella",
+        "handbag",
+        "tie",
+        "suitcase",
+        "frisbee",
+        "skis",
+        "snowboard",
+        "sports ball",
+        "kite",
+        "baseball bat",
+        "baseball glove",
+        "skateboard",
+        "surfboard",
+        "tennis racket",
+        "bottle",
+        "wine glass",
+        "cup",
+        "fork",
+        "knife",
+        "spoon",
+        "bowl",
+        "banana",
+        "apple",
+        "sandwich",
+        "orange",
+        "broccoli",
+        "carrot",
+        "pizza",
+        "donut",
+        "cake",
+        "chair",
+        "couch",
+        "bed",
+        "dining table",
+        "toilet",
+        "tv",
+        "laptop",
+        "mouse",
+        "remote",
+        "keyboard",
+        "cell phone",
+        "microwave",
+        "oven",
+        "toaster",
+        "sink",
+        "refrigerator",
+        "book",
+        "clock",
+        "vase",
+        "scissors",
+        "teddy bear",
+        "hair drier",
+        "toothbrush"
+      ],
+      "state_interface": {
+        "qwen": "label",
+        "internvl": "code"
+      },
+      "state_interface_note": "Interfaces were frozen per model after the development dry runs: Qwen returns exact category labels; InternVL returns closed-set category codes (Cxx, optionally with the exact mapped label)."
+    }
+  },
+  "upstream_sources": {
+    "clevr_math": {
+      "dataset": "dali-does/clevr-math",
+      "revision": "6a30110f887edd7edbad033275aa853ddd8c4a26",
+      "note": "Crops are shipped in data/clevr_*; upstream is needed only to re-select scenes."
+    },
+    "ragig": {
+      "dataset": "Muyi13/RAG-IGBench",
+      "revision": "44f07a97e1c285037af8c3409b49dcc83e347426",
+      "files": [
+        "images.tar.gz"
+      ],
+      "images_archive_sha256": "cefe1290d6bd990009c740496b37fc45f4fdb4ea546d035df3445f207f69aae3",
+      "license": "Apache-2.0"
+    },
+    "coco_val2017": {
+      "dataset": "detection-datasets/coco",
+      "revision": "cf0b22332314a937e9dc8a1957b21725430bb41d",
+      "files": [
+        "data/val-00000-of-00002.parquet",
+        "data/val-00001-of-00002.parquet"
+      ],
+      "parquet_sha256": [
+        "dc7a465827eab75e825eb38c9993e6b04fcf918fc2f034504d5760aedfa71d7c",
+        "fa7fcf60b688c5555b92778ca9654da9400c72d1612b09f3a094a18266e8d859"
+      ],
+      "note": "Only image pixels are used; boxes and LVIS categories are stored in data/lvis_confirmation/manifest.jsonl."
+    }
+  }
+}

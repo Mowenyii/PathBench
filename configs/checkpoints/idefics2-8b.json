@@ -1,0 +1,122 @@
+{
+  "architectures": [
+    "Idefics2ForConditionalGeneration"
+  ],
+  "files": [
+    {
+      "bytes": 1519,
+      "path": ".gitattributes",
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "bytes": 37223,
+      "path": "README.md",
+      "sha256": "47923a9f7b97a5e24cbca543f6e93c22de9a756acd04dc670b109f638fa20c16"
+    },
+    {
+      "bytes": 92,
+      "path": "added_tokens.json",
+      "sha256": "d4c4d5bff43f63a93535478cd2e9774bc9b8b46bbf8a0477daf0d15378bd174f"
+    },
+    {
+      "bytes": 119390,
+      "path": "assets/Idefics2_flowchart.png",
+      "sha256": "408d50dc421f4f073639d7ab356c187b9828726f30d94d4fd74618313a4c526b"
+    },
+    {
+      "bytes": 684,
+      "path": "config.json",
+      "sha256": "df8f8adf37fdaf5f4f8f5a7b0ee6bc1749afe53c0d9dd869b2867fac45e0af01"
+    },
+    {
+      "bytes": 185,
+      "path": "generation_config.json",
+      "sha256": "2d3cf73724d3e79586f23f30c49f4be2a1cf82002b22fafbbe124cc57185dd00"
+    },
+    {
+      "bytes": 4644107632,
+      "path": "model-00001-of-00007.safetensors",
+      "sha256": "09856b75a67fbe0ee15190901f7bd9a14ddadeedb73a47fa05bde0c3952c3266"
+    },
+    {
+      "bytes": 4987246632,
+      "path": "model-00002-of-00007.safetensors",
+      "sha256": "b5de3e438bb8473b7d2499a3b4ec3444e1eddd2abddc706fe3b08c68525db3dc"
+    },
+    {
+      "bytes": 4899116968,
+      "path": "model-00003-of-00007.safetensors",
+      "sha256": "8258d6c37ab4f2919450b8a6fdddd0c7dff8cee820781226d69b8ef40239dda9"
+    },
+    {
+      "bytes": 4999813704,
+      "path": "model-00004-of-00007.safetensors",
+      "sha256": "f35520cc4ed3bf2fefe8829fcfac4959c365ddc82754a4272712f0c926be45c8"
+    },
+    {
+      "bytes": 4999813712,
+      "path": "model-00005-of-00007.safetensors",
+      "sha256": "cd70e94bf6042469721a90aba5fad9785f319b1bb11de4024508652240918090"
+    },
+    {
+      "bytes": 4832008016,
+      "path": "model-00006-of-00007.safetensors",
+      "sha256": "6ee7757bc9c32502ea8f808bc1cacd5d7c5927e7929212c654085822cc7a75fe"
+    },
+    {
+      "bytes": 4249064488,
+      "path": "model-00007-of-00007.safetensors",
+      "sha256": "dbb6aedf518d3116bce48b54ff97d70bad8d8286ac98c908af099080fdf7f5f1"
+    },
+    {
+      "bytes": 74354,
+      "path": "model.safetensors.index.json",
+      "sha256": "055bcf76f8ed00ab2455a32d537dce6da906ed5aa60867da304b82edefdd66ae"
+    },
+    {
+      "bytes": 460,
+      "path": "preprocessor_config.json",
+      "sha256": "4b2b26cb3068b836d20da2ef1be0fde3986b66faf205b406697d323242e84966"
+    },
+    {
+      "bytes": 483,
+      "path": "processor_config.json",
+      "sha256": "4d4ac2bc2721f12ab6e139d7675f0fe889e1cd45bb1a8444f0d8784d7da0103b"
+    },
+    {
+      "bytes": 1041,
+      "path": "special_tokens_map.json",
+      "sha256": "3abe56bd9c7d71038a0fd91ba8e7e94f75789ee7000da6d9d64e7d6a6cf2b065"
+    },
+    {
+      "bytes": 1795881,
+      "path": "tokenizer.json",
+      "sha256": "36542c90c62d6b9d3fcf240fc41ded07ef74449f21bc3a60a7efa2c112dbc2af"
+    },
+    {
+      "bytes": 493443,
+      "path": "tokenizer.model",
+      "sha256": "dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055"
+    },
+    {
+      "bytes": 1636,
+      "path": "tokenizer_config.json",
+      "sha256": "dc11dae0670be58e217f4cb97109512f1299a2ba24e74c40aacbd4c77dc5faaf"
+    }
+  ],
+  "metadata_revision_policy": "every_non_cache_file_first_line_exact_revision",
+  "repository": "HuggingFaceM4/idefics2-8b",
+  "revision": "2c42686c57fe21cf0348c9ce1077d094b72e7698",
+  "schema_version": 1,
+  "total_bytes": 33613697543,
+  "total_files": 20,
+  "weight_shards": [
+    "model-00001-of-00007.safetensors",
+    "model-00002-of-00007.safetensors",
+    "model-00003-of-00007.safetensors",
+    "model-00004-of-00007.safetensors",
+    "model-00005-of-00007.safetensors",
+    "model-00006-of-00007.safetensors",
+    "model-00007-of-00007.safetensors"
+  ]
+}

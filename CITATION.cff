@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use PathBench, please cite the paper below."
+title: "PathBench"
+authors:
+  - family-names: Mo
+    given-names: Wenyi
+    affiliation: Rutgers University
+  - family-names: Metaxas
+    given-names: Dimitris
+    affiliation: Rutgers University
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Answer Agreement Is Not State Integrity: A Benchmark for Silent State Corruption in Visual Agents"
+  authors:
+    - family-names: Mo
+      given-names: Wenyi
+      affiliation: Rutgers University
+    - family-names: Metaxas
+      given-names: Dimitris
+      affiliation: Rutgers University
+  collection-title: "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  year: 2027

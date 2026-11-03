@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathbench"
+version = "1.0.0"
+description = "A benchmark for silent state corruption in visual agents"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Wenyi Mo"}]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23,<3", "Pillow>=9", "matplotlib>=3.5"]
+
+[project.optional-dependencies]
+prepare = ["pyarrow>=12"]
+inference = ["torch>=2.4", "torchvision>=0.19", "transformers>=4.47,<5",
+             "accelerate>=1.0", "huggingface-hub>=0.36,<1", "safetensors>=0.4",
+             "einops", "timm", "sentencepiece"]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["pathbench"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

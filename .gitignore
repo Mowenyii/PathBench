@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+models/
+results/rerun/
+results/reproduced/
+results/smoke/
+data/ragig_confirmation/views/
+data/lvis_confirmation/crops/
+
+# The camera-ready manuscript is maintained separately from the code release.
+paper/

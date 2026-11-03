@@ -1,0 +1,159 @@
+{
+  "architectures": [
+    "InternVLChatModel"
+  ],
+  "files": [
+    {
+      "bytes": 1634,
+      "path": ".gitattributes",
+      "sha256": "a9052e0ab15012812d1e35b9647a6b64f5da1ccc77272b077410260795a200ce"
+    },
+    {
+      "bytes": 34050,
+      "path": "README.md",
+      "sha256": "5d8ef4c3ba534f75e13205ccd39e338b8446c0a722e6651704343353cacc50f1"
+    },
+    {
+      "bytes": 179,
+      "path": "added_tokens.json",
+      "sha256": "df59e170102f8d19d3e186cc91c81006c9822ea9fe8ce2b68e7be77195c01db3"
+    },
+    {
+      "bytes": 4052,
+      "path": "config.json",
+      "sha256": "923cb73535303a6c439c3c139dc12f1b7bddd6643dee8ddf63d0d56368d5e8d5"
+    },
+    {
+      "bytes": 5548,
+      "path": "configuration_intern_vit.py",
+      "sha256": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8"
+    },
+    {
+      "bytes": 7005,
+      "path": "configuration_internlm2.py",
+      "sha256": "9f9e14d64be7b81068e8421fd27e1c466b3fb6aeb67725ca328e56083c3f7a60"
+    },
+    {
+      "bytes": 4088,
+      "path": "configuration_internvl_chat.py",
+      "sha256": "20bd8ddcf5c51f9fded0e3191db2bc00a7012fd3f7912dea4277fa24f17b6e32"
+    },
+    {
+      "bytes": 15309,
+      "path": "conversation.py",
+      "sha256": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee"
+    },
+    {
+      "bytes": 49337,
+      "path": "eval_llm_benchmark.log",
+      "sha256": "60484438168a40b6ab2a370d2023d8002c391851da68c85768de937a9626ea55"
+    },
+    {
+      "bytes": 78073,
+      "path": "examples/image1.jpg",
+      "sha256": "c587294b3bf637dacbb3c96324c127187a2f242c94f639633a0d8a2775a9a399"
+    },
+    {
+      "bytes": 125656,
+      "path": "examples/image2.jpg",
+      "sha256": "08487494b8dc08d44bc36491adf3ab89ff30d13a3122da86f3cd67cad89eeee8"
+    },
+    {
+      "bytes": 1867237,
+      "path": "examples/red-panda.mp4",
+      "sha256": "d921c07bb97224d65a37801541d246067f0d506f08723ffa1ad85c217907ccb8"
+    },
+    {
+      "bytes": 115,
+      "path": "generation_config.json",
+      "sha256": "eac5a6b0dff266d8ce2fcf6c05880d7ff71087ca273d1fafd6fd2f53b2565d2e"
+    },
+    {
+      "bytes": 4939944336,
+      "path": "model-00001-of-00004.safetensors",
+      "sha256": "c9815f2a1c042cb4b6db939063a7b3ea6533c2ed0ffa3b4d79ac3c7d5cb5be9c"
+    },
+    {
+      "bytes": 4915914584,
+      "path": "model-00002-of-00004.safetensors",
+      "sha256": "fbc4b8d534056f7b700276ddc2e52a407767a7803d788144c620a357df799d6f"
+    },
+    {
+      "bytes": 4915914592,
+      "path": "model-00003-of-00004.safetensors",
+      "sha256": "0b5544a5021413d7b7e16f3a53800806474293df5c705101926634122c6c4103"
+    },
+    {
+      "bytes": 1379026920,
+      "path": "model-00004-of-00004.safetensors",
+      "sha256": "304352082d3656f355ccac2833ab1faef475788e1d14973c5629d5721bd09b72"
+    },
+    {
+      "bytes": 51167,
+      "path": "model.safetensors.index.json",
+      "sha256": "9110700a238c972daba84e094fa2c79c1a7ab7595df7912f30bd5f08120e226b"
+    },
+    {
+      "bytes": 18106,
+      "path": "modeling_intern_vit.py",
+      "sha256": "1978e330ea5533dda4d1379096aded271fc741347fc48cb4924846b56a2a6a4b"
+    },
+    {
+      "bytes": 61208,
+      "path": "modeling_internlm2.py",
+      "sha256": "c014d933c6afdf7414791c1859c692ca4b49c925688bcc00fbd1658ef75fb0ba"
+    },
+    {
+      "bytes": 15988,
+      "path": "modeling_internvl_chat.py",
+      "sha256": "1915c32d984aed6750e911884ad59f92504f73b799c7443121c67b9cb21fe347"
+    },
+    {
+      "bytes": 287,
+      "path": "preprocessor_config.json",
+      "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4"
+    },
+    {
+      "bytes": 854243,
+      "path": "runs/Nov18_19-03-50_HOST-10-140-60-23/events.out.tfevents.1731928182.HOST-10-140-60-23.129254.0",
+      "sha256": "e3dd92f5f96eb3e07774dc14ca9cbeedc6470c897e61c303ad5a48059f90a650"
+    },
+    {
+      "bytes": 844,
+      "path": "special_tokens_map.json",
+      "sha256": "8cb729e6fd4c29e8c5be65cb51128735cea0ab56606a186cf8cbb30123c72eae"
+    },
+    {
+      "bytes": 8791,
+      "path": "tokenization_internlm2.py",
+      "sha256": "e548dc777a1def2f5339cfe12de8da2d12500d664e3dafa5c585c407e4b806fa"
+    },
+    {
+      "bytes": 7788,
+      "path": "tokenization_internlm2_fast.py",
+      "sha256": "b6dc75cb1a276a897190a003b97a65b13b68b948d64646df67e7f18392dfbb34"
+    },
+    {
+      "bytes": 1477754,
+      "path": "tokenizer.model",
+      "sha256": "f868398fc4e05ee1e8aeba95ddf18ddcc45b8bce55d5093bead5bbf80429b48b"
+    },
+    {
+      "bytes": 4006,
+      "path": "tokenizer_config.json",
+      "sha256": "a3c739bcdfbb942f972160124327121b8d11c609c1355e05ed9b5ce8d1b5b67a"
+    }
+  ],
+  "metadata_revision_policy": "every_non_cache_file_first_line_exact_revision",
+  "repository": "OpenGVLab/InternVL2_5-8B",
+  "revision": "e9e4c0dc1db56bfab10458671519b7fa3dd29463",
+  "schema_version": 1,
+  "total_bytes": 16155492897,
+  "total_files": 28,
+  "weight_shards": [
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors"
+  ]
+}
